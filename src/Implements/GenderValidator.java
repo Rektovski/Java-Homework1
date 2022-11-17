@@ -12,6 +12,11 @@ public class GenderValidator implements Validator {
     }
 
     @Override
+    public String getInfo() {
+        return "Gender: " + gender;
+    }
+
+    @Override
     public boolean isValid() {
         return Objects.equals(gender, "MALE") || Objects.equals(gender, "FEMALE");
     }

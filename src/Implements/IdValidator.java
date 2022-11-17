@@ -9,6 +9,11 @@ public class IdValidator implements Validator {
         this.id = id;
     }
 
+    @Override
+    public String getInfo() {
+        return "ID: " + id;
+    }
+
     public boolean isValid() {
         return this.id.length()==11;
     }

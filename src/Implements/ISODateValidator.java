@@ -13,6 +13,11 @@ public class ISODateValidator implements Validator {
     }
 
     @Override
+    public String getInfo() {
+        return "Date: " + String.valueOf(date);
+    }
+
+    @Override
     public boolean isValid() {
         return LocalDate.now().isAfter(this.date);
     }

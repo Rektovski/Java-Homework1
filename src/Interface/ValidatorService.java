@@ -10,6 +10,7 @@ public class ValidatorService {
             if(!i.isValid()){
                 throw new ValidatorException("Invalid data");
             }
+            System.out.println(i.getInfo() + " ");
         }
 
         System.out.println("Everything is valid");

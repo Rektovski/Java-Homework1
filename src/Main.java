@@ -13,7 +13,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws ValidatorException {
         Scanner scanner = new Scanner(System.in);
-        String id = scanner.nextLine(), gender = scanner.nextLine();
+        String id = scanner.nextLine();
+        String gender = scanner.nextLine();
         LocalDate date = LocalDate.parse(scanner.nextLine());
 
         GenderValidator list1 = new GenderValidator(gender);
