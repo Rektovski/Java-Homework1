@@ -2,9 +2,14 @@ package Implements;
 
 import Interface.Validator;
 
-public abstract class IdValidator implements Validator {
-    @Override
-    public boolean isValid(String id) {
-        return id.length() < 4;
+public class IdValidator implements Validator {
+    public String id;
+
+    public IdValidator(String id) {
+        this.id = id;
+    }
+
+    public boolean isValid() {
+        return this.id.length()==11;
     }
 }

@@ -4,9 +4,15 @@ import Interface.Validator;
 
 import java.util.Objects;
 
-public abstract class GenderValidator implements Validator {
+public class GenderValidator implements Validator {
+    public String gender;
+
+    public GenderValidator(String gender) {
+        this.gender = gender;
+    }
+
     @Override
-    public boolean isValid(String gender) {
+    public boolean isValid() {
         return Objects.equals(gender, "MALE") || Objects.equals(gender, "FEMALE");
     }
 }

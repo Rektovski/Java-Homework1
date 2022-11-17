@@ -5,9 +5,15 @@ import Interface.Validator;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public abstract class ISODateValidator implements Validator {
+public class ISODateValidator implements Validator {
+    public LocalDate date;
+
+    public ISODateValidator(LocalDate date){
+        this.date = date;
+    }
+
     @Override
-    public boolean isValid(LocalDate date) {
-        return LocalDate.now().isAfter(date);
+    public boolean isValid() {
+        return LocalDate.now().isAfter(this.date);
     }
 }
