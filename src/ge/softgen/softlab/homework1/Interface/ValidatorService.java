@@ -1,6 +1,6 @@
-package Interface;
+package ge.softgen.softlab.homework1.Interface;
 
-import Exceptions.ValidatorException;
+import ge.softgen.softlab.homework1.Exceptions.ValidatorException;
 
 import java.util.List;
 

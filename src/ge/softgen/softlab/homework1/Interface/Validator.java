@@ -1,6 +1,4 @@
-package Interface;
-
-import java.time.LocalDate;
+package ge.softgen.softlab.homework1.Interface;
 
 public interface Validator {
     public boolean isValid();

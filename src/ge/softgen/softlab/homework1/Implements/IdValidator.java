@@ -1,6 +1,6 @@
-package Implements;
+package ge.softgen.softlab.homework1.Implements;
 
-import Interface.Validator;
+import ge.softgen.softlab.homework1.Interface.Validator;
 
 public class IdValidator implements Validator {
     public String id;

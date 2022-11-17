@@ -1,9 +1,11 @@
-import Exceptions.ValidatorException;
-import Implements.GenderValidator;
-import Implements.ISODateValidator;
-import Implements.IdValidator;
-import Interface.Validator;
-import Interface.ValidatorService;
+package ge.softgen.softlab.homework1.TestCases;
+
+import ge.softgen.softlab.homework1.Exceptions.ValidatorException;
+import ge.softgen.softlab.homework1.Implements.GenderValidator;
+import ge.softgen.softlab.homework1.Implements.ISODateValidator;
+import ge.softgen.softlab.homework1.Implements.IdValidator;
+import ge.softgen.softlab.homework1.Interface.Validator;
+import ge.softgen.softlab.homework1.Interface.ValidatorService;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
