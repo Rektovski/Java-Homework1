@@ -5,14 +5,13 @@ import Exceptions.ValidatorException;
 import java.util.List;
 
 public class ValidatorService {
-    public static void validate(List<Validator> list) throws ValidatorException{
+    public static String validate(List<Validator> list) throws ValidatorException{
         for(Validator i: list){
             if(!i.isValid()){
                 throw new ValidatorException("Invalid data");
             }
             System.out.println(i.getInfo() + " ");
         }
-
-        System.out.println("Everything is valid");
+        return "Everything is valid";
     }
 }

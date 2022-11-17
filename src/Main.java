@@ -5,7 +5,6 @@ import Implements.IdValidator;
 import Interface.Validator;
 import Interface.ValidatorService;
 
-import java.io.IOError;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
@@ -26,7 +25,6 @@ public class Main {
                 list2,
                 list3
         );
-
         ValidatorService.validate(list);
     }
 }
