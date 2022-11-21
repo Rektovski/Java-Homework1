@@ -13,9 +13,17 @@ public class Main {
     public static void main(String[] args) throws ValidatorException {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Examples:");
+        System.out.println("ID, 13 Symbol, 0-9");
+        System.out.print("ID: ");
         String id = scanner.nextLine();
+        System.out.println("MALE or FEMALE");
+        System.out.print("Gender: ");
         String gender = scanner.nextLine();
+        System.out.println("Date Format: YEAR-MM-DD, 2000-01-01");
+        System.out.print("Birthdate: ");
         LocalDate date = LocalDate.parse(scanner.nextLine());
+        System.out.println("***************************");
 
         GenderValidator list1 = new GenderValidator(gender);
         IdValidator list2 = new IdValidator(id);
